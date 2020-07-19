@@ -14,8 +14,8 @@ jobs:
       - run: echo "next commit"
 workflows:
   version: 2.1
-    bhuvan_kishan:
-      jobs:
-        - bhuvan
-        - kishan
+  bhuvan_kishan:
+    jobs:
+      - bhuvan
+      - kishan
         
