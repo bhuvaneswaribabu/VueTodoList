@@ -1,9 +1,23 @@
 version: 2
 jobs:
-  build:
+  bhuvan:
     docker:
       - image: circleci/node:8.9
     steps:
       - checkout
       - run: echo "npm installing"
       - run: npm install
+  kishan:
+    docker:
+      - image: circleci/node:8.9
+    steps:
+      - checkout
+      - run: echo "next commit"
+      - run: npm install
+  workflows:
+    version: 2
+    bhuvan_kishan:
+      jobs:
+        - bhuvan
+        - kishan
+        
