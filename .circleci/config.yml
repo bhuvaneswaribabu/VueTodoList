@@ -1,6 +1,6 @@
-version: 2
+version: 2.1
 jobs:
-  bhuvan:
+  build:
     docker:
       - image: circleci/node:8.9
     steps:
@@ -12,8 +12,8 @@ jobs:
     steps:
       - checkout
       - run: echo "next commit"
-  workflows:
-    version: 2
+workflows:
+  version: 2.1
     bhuvan_kishan:
       jobs:
         - bhuvan
