@@ -1,6 +1,6 @@
 version: 2.1
 jobs:
-  build:
+  bhuvan:
     docker:
       - image: circleci/node:8.9
     steps:
